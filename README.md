@@ -121,9 +121,10 @@ Allows you to create a complete energy setup without any hardware:
 
 1. Solar production exceeds household consumption.
 2. Solar Flow detects available surplus energy.
-3. A Shelly-controlled load is automatically enabled.
-4. EV charging current is adjusted if required.
-5. Grid export is minimized and self-consumption is maximized.
+3. Connected devices are managed based on priority and estimated power consumption.
+4. A Shelly-controlled load is automatically enabled.
+5. EV charging current is adjusted if required.
+6. Grid export is minimized and self-consumption is maximized.
 
 👉 The entire process is fully automated.
 
