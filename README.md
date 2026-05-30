@@ -56,7 +56,7 @@ The system was designed as a network of abstract energy devices, where:
 
 ---
 
-# 🧠 Real-world problem
+# 🌍 Real-world problem
 
 Homes with solar panels often export excess energy to the grid at low value or waste it. EV charging and battery systems are rarely optimized dynamically.
 
@@ -152,6 +152,24 @@ Allows you to create a complete energy setup without any hardware:
 6. Grid export is minimized and self-consumption is maximized.
 
 👉 The entire process is fully automated.
+
+---
+# ⚡ Device Prioritization Model
+
+Devices are automatically controlled based on a priority-based energy allocation system.
+
+Priority is defined by the user and combined with the estimated power consumption defined for each device.
+
+The system uses this information to optimize energy distribution in real time.
+
+Priority rules:
+
+Devices with higher user-defined priority are favored when allocating available solar surplus
+Devices with lower priority are activated only if sufficient surplus energy is available
+Device activation is based on both priority level and estimated power consumption
+Devices may also be automatically deactivated when available surplus decreases, following the same priority logic
+
+Higher priority devices are always maintained first, while lower priority devices are the first to be reduced or turned off when energy becomes limited.
 
 ---
 
