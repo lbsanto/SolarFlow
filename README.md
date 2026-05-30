@@ -125,11 +125,7 @@ Available commands
 .\win_startbuild.ps1 remove
 .\win_startbuild.ps1 help
 ```
-⚠️ Permissions (Windows)
 
-```
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
 #
 🔌 Shelly API integration
 
@@ -203,6 +199,27 @@ Full management script for Windows:
 #
 ▶️ Initial Setup (Linux)
 
+📥 Download the Project
+
+You can obtain the project in two ways:
+
+* 🔧 Option 1 – Clone via Git (Recommended)
+```
+git clone https://github.com/lbsanto/SolarFlow.git
+cd cd solar-flow
+```
+
+#
+* 📦 Option 2 – Download as ZIP
+
+```
+- Click on Code
+- Select Download ZIP
+- Extract the file on your machine
+- Open the project folder in your terminal
+```
+
+#
 For Linux, open a terminal and run:
 ```
 linux_startbuild.sh build
