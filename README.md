@@ -1,10 +1,30 @@
-☀️ Solar Flow – Intelligent Solar Surplus Management System
+# ☀️ Solar Flow – Intelligent Solar Surplus Management System
 
 Intelligent solar energy management system based on Shelly EM (single and three-phase), with automatic load control via Shelly 1PM and integration with electric vehicle chargers.
 
 The system communicates via the official Shelly REST API, but also supports simulated devices that completely mimic Shelly behavior, allowing for hardware-free development and testing.
-#
-🧠 Main concept
+
+---
+
+# 🚀 Quick Start
+
+```bash
+git clone https://github.com/lbsanto/SolarFlow.git
+cd SolarFlow
+
+./linux_startbuild.sh build
+./linux_startbuild.sh start
+```
+
+Open your browser and access:
+
+```text
+http://localhost
+```
+
+---
+
+# 🧠 Main Concept
 
 The system was designed as a network of abstract energy devices, where:
 
@@ -12,45 +32,74 @@ The system was designed as a network of abstract energy devices, where:
 * 🧪 Simulated devices can be created
 * 🔁 Both operate identically through a common API
 
-👉 For the system, there is no difference between real and simulated devices
+👉 For the system, there is no difference between real and simulated devices.
 
-#
-⚙️ Supported device types
+---
 
-🔋 Real Shelly devices
+# ⭐ Key Feature
+
+Solar Flow is not only a solar surplus management platform.
+
+It is also a complete Shelly-compatible simulation environment that allows developers and installers to:
+
+* Develop automations without hardware
+* Test energy management scenarios safely
+* Validate configurations before deployment
+* Reproduce real-world conditions using virtual devices
+
+This significantly reduces development and installation time while improving reliability.
+
+---
+
+# ⚙️ Supported Device Types
+
+## 🔋 Real Shelly Devices
 
 * Shelly EM (single-phase and three-phase)
 * Shelly 1PM
 * Shelly Plug / compatible relays
 * EV chargers integrated via Shelly
-* Simulated devices
-  
-#
-🔁 Conceptual result
 
-[SHELLY REAL] == [SIMULATOR]
+## 🧪 Simulated Devices
 
-#
-🏗️ System architecture
+* Fully virtual equivalents of supported Shelly devices
+
+---
+
+# 🔁 Conceptual Result
+
+```text
+Real Shelly Devices  ───►
+                         │
+                         ▼
+                  Solar Flow Core
+                         ▲
+                         │
+Simulated Devices   ───►
+```
+
+---
+
+# 🏗️ System Architecture
 
 <img width="2115" height="523" alt="image" src="https://github.com/user-attachments/assets/80e31a99-0586-4319-a733-79cdd907bb3c" />
 
-#
-🔌 Device integration
+---
 
+# 🔌 Device Integration
 
 The system supports:
-
 
 * Adding real Shelly devices
 * Creating simulated devices
 * Dynamic API endpoint configuration
 * Fully uniform behavior between real and simulated devices
 
-👉 The system treats all devices as equal, regardless of their origin
+👉 The system treats all devices as equal, regardless of their origin.
 
-#
-🧪 Simulator mode
+---
+
+# 🧪 Simulator Mode
 
 Allows you to create a complete energy setup without any hardware:
 
@@ -59,13 +108,56 @@ Allows you to create a complete energy setup without any hardware:
 * 🔌 Virtual devices
 * ⚙️ Full energy automation testing
 
-#
-⚡ Operating logic
+---
+
+# ⚡ Operating Logic
 
 <img width="550" height="550" alt="image" src="https://github.com/user-attachments/assets/db145966-3567-411c-ad62-986b893bfdab" />
 
-#
-🐳 Docker execution
+---
+
+# 🏠 Example Scenario
+
+1. Solar production exceeds household consumption.
+2. Solar Flow detects available surplus energy.
+3. A Shelly-controlled load is automatically enabled.
+4. EV charging current is adjusted if required.
+5. Grid export is minimized and self-consumption is maximized.
+
+👉 The entire process is fully automated.
+
+---
+
+# 📸 User Interface
+
+Screenshots:
+
+* Solar production monitoring
+ 
+* Household consumption
+* Device meter management
+  
+<img width="755" height="408" alt="image" src="https://github.com/user-attachments/assets/af21f83e-da9e-49b6-ba70-4c7668631232" />
+
+
+
+* Device management
+
+<img width="752" height="406" alt="image" src="https://github.com/user-attachments/assets/4d5f5d77-f8e1-4bc5-a1ca-63207c5e7f2c" />
+
+* Logs
+  
+<img width="752" height="407" alt="image" src="https://github.com/user-attachments/assets/fd391a65-c55f-468e-8f41-4c8394085b10" />
+
+
+* Settings
+<img width="755" height="405" alt="image" src="https://github.com/user-attachments/assets/1fa8c06d-4913-4237-8634-660e1d03f432" />
+
+
+
+---
+
+# 🐳 Docker Execution
 
 The system is designed to run entirely inside a Docker environment, ensuring:
 
@@ -74,19 +166,22 @@ The system is designed to run entirely inside a Docker environment, ensuring:
 * 🧪 Complete dependency isolation
 * 🚀 Fast and predictable deployment
 * 🔧 Reproducible execution on any machine
-* 👉 Solar Flow always runs the same way, regardless of the operating system or local configuration.
 
-#
-🐧 Linux – Management script
+👉 Solar Flow always runs the same way, regardless of the operating system or local configuration.
 
-📄 linux_startbuild.sh
+---
 
-```
+# 🐧 Linux – Management Script
+
+📄 `linux_startbuild.sh`
+
+```bash
 chmod +x linux_startbuild.sh
 ```
 
-Available commands
-```
+Available commands:
+
+```bash
 ./linux_startbuild.sh build
 ./linux_startbuild.sh start
 ./linux_startbuild.sh stop
@@ -94,17 +189,19 @@ Available commands
 ./linux_startbuild.sh help
 ```
 
-#
-🍎 MacOS – Management script
+---
 
-📄 mac_startbuild.sh
+# 🍎 macOS – Management Script
 
-```
+📄 `mac_startbuild.sh`
+
+```bash
 chmod +x mac_startbuild.sh
 ```
 
-Available commands
-```
+Available commands:
+
+```bash
 ./mac_startbuild.sh build
 ./mac_startbuild.sh start
 ./mac_startbuild.sh stop
@@ -112,13 +209,15 @@ Available commands
 ./mac_startbuild.sh help
 ```
 
-#
-🪟 Windows – PowerShell
+---
 
-📄 win_startbuild.sh
+# 🪟 Windows – PowerShell
 
-Available commands
-```
+📄 `win_startbuild.ps1`
+
+Available commands:
+
+```powershell
 .\win_startbuild.ps1 build
 .\win_startbuild.ps1 start
 .\win_startbuild.ps1 stop
@@ -126,8 +225,15 @@ Available commands
 .\win_startbuild.ps1 help
 ```
 
-#
-🔌 Shelly API integration
+⚠️ Required permissions:
+
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+---
+
+# 🔌 Shelly API Integration
 
 The system communicates via:
 
@@ -135,9 +241,11 @@ The system communicates via:
 * Compatible simulated endpoints
 * Continuous device state polling
 
-#
-🧩 Project structure
-```
+---
+
+# 🧩 Project Structure
+
+```text
 .
 ├── deploy
 │   ├── Dockerfile
@@ -153,7 +261,9 @@ The system communicates via:
 ├── win_startbuild.ps1
 ```
 
-🚀 deploy/
+---
+
+## 🚀 deploy/
 
 Contains all configuration required for Docker execution:
 
@@ -161,109 +271,143 @@ Contains all configuration required for Docker execution:
 * Nginx configuration
 * Container backend startup script
 
-🏗️ dist/
+---
+
+## 🏗️ dist/
 
 Contains the compiled system:
 
-* compiled backend
-* built frontend (Next.js)
+* Compiled backend
+* Built frontend (Next.js)
 
-👉 Represents the final output ready for production
+👉 Represents the final output ready for production.
 
+---
 
-
-🐧 linux_startbuild.sh
+## 🐧 linux_startbuild.sh
 
 Full management script for Linux:
 
-* build the image
-* start/stop the container
-* remove the system
+* Build the image
+* Start/stop the container
+* Remove the system
 
-🍎 mac_startbuild.sh
+---
 
-Full management script for MacOS:
+## 🍎 mac_startbuild.sh
 
-* build the image
-* start/stop the container
-* remove the system
+Full management script for macOS:
 
-🪟 win_startbuild.ps1
+* Build the image
+* Start/stop the container
+* Remove the system
+
+---
+
+## 🪟 win_startbuild.ps1
 
 Full management script for Windows:
 
-* build the image
-* start/stop the container
-* remove the system
+* Build the image
+* Start/stop the container
+* Remove the system
 
-#
-▶️ Initial Setup (Linux)
+---
 
-📥 Download the Project
+# ▶️ Initial Setup
+
+## 📥 Download the Project
 
 You can obtain the project in two ways:
 
-* 🔧 Option 1 – Clone via Git (Recommended)
-```
+### 🔧 Option 1 – Clone via Git (Recommended)
+
+```bash
 git clone https://github.com/lbsanto/SolarFlow.git
-cd cd solar-flow
+cd SolarFlow
 ```
 
-#
-* 📦 Option 2 – Download as ZIP
+### 📦 Option 2 – Download as ZIP
 
-```
-- Click on Code
-- Select Download ZIP
-- Extract the file on your machine
-- Open the project folder in your terminal
+1. Click **Code**
+2. Select **Download ZIP**
+3. Extract the file on your machine
+4. Open the project folder in your terminal
+
+---
+
+## Linux
+
+```bash
+./linux_startbuild.sh build
+./linux_startbuild.sh start
 ```
 
-#
-For Linux, open a terminal and run:
-```
-linux_startbuild.sh build
-linux_startbuild.sh start
-```
-#
-🌐 Access the Application
+---
+
+# 🌐 Access the Application
 
 After starting the system, open your browser and navigate to:
-```
+
+```text
 http://localhost
 ```
+
 You can then use the system normally.
 
-#
-⏹️ Stop the System
+---
 
-To stop the running application:
-```
-linux_startbuild.sh stop
-```
-#
-🧹 Fully Remove the System
+# ⏹️ Stop the System
 
-To completely remove all generated files and clean the environment:
-```
-linux_startbuild.sh remove
-```
-#
-
-ℹ️ Other Platforms
-
-The same commands apply on other operating systems, only changing the script name:
-
-macOS → mac_startbuild.sh
-Windows → win_startbuild.ps1
-```
-mac_startbuild.sh build
-mac_startbuild.sh start
+```bash
+./linux_startbuild.sh stop
 ```
 
-#
+---
 
-🎯 System objective
+# 🧹 Fully Remove the System
+
+```bash
+./linux_startbuild.sh remove
+```
+
+---
+
+# ℹ️ Other Platforms
+
+The same commands apply on other operating systems, only changing the script name.
+
+### macOS
+
+```bash
+./mac_startbuild.sh build
+./mac_startbuild.sh start
+```
+
+### Windows
+
+```powershell
+.\win_startbuild.ps1 build
+.\win_startbuild.ps1 start
+```
+
+---
+
+# 🌟 Why Solar Flow?
+
+Unlike traditional solar automation platforms, Solar Flow provides:
+
+* Real and simulated device interoperability
+* Hardware-independent development
+* Docker-based deployment
+* Unified device abstraction
+* Support for energy optimization and EV charging
+
+This enables faster development, safer testing, and easier deployment.
+
+---
+
+# 🎯 System Objective
 
 To build an energy platform capable of:
 
@@ -273,22 +417,33 @@ To build an energy platform capable of:
 * 🧪 Running without hardware via simulation
 * 🔁 Treating real and simulated devices identically
 
-👨‍💻 Project philosophy
+---
 
-“If it works in perfect simulation, it works in the real world.”
+# 🏆 Shelly Smart Home Challenge 2026
 
-## License
+Solar Flow demonstrates advanced energy automation using the Shelly ecosystem, combining:
 
-Copyright 2026 Ludger Brandão do Espirito Santo
+* Smart solar surplus management
+* EV charger integration
+* Shelly REST API integration
+* Hardware simulation capabilities
+* Docker-based deployment
 
-Licensed under the Apache License, Version 2.0.
+The project showcases how real and simulated Shelly devices can coexist within the same automation platform.
 
+---
 
+# 👨‍💻 Project Philosophy
 
+> "If it works in perfect simulation, it works in the real world."
 
+---
 
+# 📜 License
 
+Copyright © 2026 Ludger Brandão do Espírito Santo
 
+Licensed under the Apache License, Version 2.0 (the "License").
+You may not use this project except in compliance with the License.
 
-
-
+See the `LICENSE` file for the full license text.
