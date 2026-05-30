@@ -345,7 +345,7 @@ Contains all configuration required for Docker execution:
 Contains the compiled system:
 
 * Compiled backend
-* Built frontend (Next.js)
+* Built frontend
 
 👉 Represents the final output ready for production.
 
