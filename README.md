@@ -100,16 +100,16 @@ Available commands
 📄 mac_startbuild.sh
 
 ```
-chmod +x linux_startbuild.sh
+chmod +x mac_startbuild.sh
 ```
 
 Available commands
 ```
-./linux_startbuild.sh build
-./linux_startbuild.sh start
-./linux_startbuild.sh stop
-./linux_startbuild.sh remove
-./linux_startbuild.sh help
+./mac_startbuild.sh build
+./mac_startbuild.sh start
+./mac_startbuild.sh stop
+./mac_startbuild.sh remove
+./mac_startbuild.sh help
 ```
 
 #
@@ -199,6 +199,50 @@ Full management script for Windows:
 * build the image
 * start/stop the container
 * remove the system
+
+#
+▶️ Initial Setup (Linux)
+
+For Linux, open a terminal and run:
+```
+linux_startbuild.sh build
+linux_startbuild.sh start
+```
+#
+🌐 Access the Application
+
+After starting the system, open your browser and navigate to:
+```
+http://localhost
+```
+You can then use the system normally.
+
+#
+⏹️ Stop the System
+
+To stop the running application:
+```
+linux_startbuild.sh stop
+```
+#
+🧹 Fully Remove the System
+
+To completely remove all generated files and clean the environment:
+```
+linux_startbuild.sh remove
+```
+#
+
+ℹ️ Other Platforms
+
+The same commands apply on other operating systems, only changing the script name:
+
+macOS → mac_startbuild.sh
+Windows → win_startbuild.sh
+```
+mac_startbuild.sh build
+mac_startbuild.sh start
+```
 
 #
 
