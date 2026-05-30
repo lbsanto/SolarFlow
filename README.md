@@ -145,22 +145,42 @@ Allows you to create a complete energy setup without any hardware:
 
 Screenshots:
 
-* Solar production monitoring
+* Solar production monitoring ( Automation )
+
+<img width="755" height="408" alt="image" src="https://github.com/user-attachments/assets/98d1827e-d6f1-4254-9b3b-e8b1e1fb8af4" />
+
+
+
  
-* Household consumption
+* Household consumption ( Automation )
+
+<img width="755" height="408" alt="image" src="https://github.com/user-attachments/assets/91f154a6-46d1-4fe4-a430-2a5f4cf561a2" />
+
+
+
+
+  
 * Device meter management
   
 <img width="755" height="408" alt="image" src="https://github.com/user-attachments/assets/af21f83e-da9e-49b6-ba70-4c7668631232" />
 
 
 
+
+
 * Device management
 
-<img width="752" height="406" alt="image" src="https://github.com/user-attachments/assets/4d5f5d77-f8e1-4bc5-a1ca-63207c5e7f2c" />
+<img width="756" height="406" alt="image" src="https://github.com/user-attachments/assets/c19b932b-9672-4bfa-b868-8244ad4fb966" />
+
+
+
 
 * Logs
   
 <img width="752" height="407" alt="image" src="https://github.com/user-attachments/assets/fd391a65-c55f-468e-8f41-4c8394085b10" />
+
+
+
 
 
 * Settings
