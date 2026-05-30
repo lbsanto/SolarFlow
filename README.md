@@ -294,6 +294,8 @@ Available commands:
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Unblock-File .\win_startbuild.ps1
 ```
 
 ---
