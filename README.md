@@ -277,6 +277,11 @@ To build an energy platform capable of:
 
 “If it works in perfect simulation, it works in the real world.”
 
+## License
+
+Copyright 2026 Ludger Brandão do Espirito Santo
+
+Licensed under the Apache License, Version 2.0.
 
 
 
