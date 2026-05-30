@@ -9,6 +9,7 @@ The system communicates via the official Shelly REST API, but also supports simu
 # 🚀 Quick Start
 
 ```bash
+Download and install Docker Desktop at https://www.docker.com/
 git clone https://github.com/lbsanto/SolarFlow.git
 cd SolarFlow
 
