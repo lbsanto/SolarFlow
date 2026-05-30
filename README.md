@@ -4,6 +4,14 @@ Intelligent solar energy management system based on Shelly EM (single and three-
 
 The system communicates via the official Shelly REST API, but also supports simulated devices that completely mimic Shelly behavior, allowing for hardware-free development and testing.
 
+👉 Solar Flow is compatible with all solar inverter brands, regardless of manufacturer, as long as production/consumption data can be measured (e.g., via Shelly EM or equivalent shelly meters).
+
+👉 The system does not require access to any inverter manufacturer cloud services, operating independently of vendor ecosystems.
+
+👉 It can operate without internet connection in local mode, ensuring full functionality inside a LAN environment.
+
+👉 Solar Flow is also fully compatible with battery storage systems, allowing intelligent management of stored solar energy, charge/discharge optimization, and self-consumption prioritization.
+
 ---
 
 # 🚀 Quick Start
@@ -145,22 +153,42 @@ Allows you to create a complete energy setup without any hardware:
 
 Screenshots:
 
-* Solar production monitoring
+* Solar production monitoring ( Automation )
+
+<img width="755" height="408" alt="image" src="https://github.com/user-attachments/assets/98d1827e-d6f1-4254-9b3b-e8b1e1fb8af4" />
+
+
+
  
-* Household consumption
+* Household consumption ( Automation )
+
+<img width="755" height="408" alt="image" src="https://github.com/user-attachments/assets/91f154a6-46d1-4fe4-a430-2a5f4cf561a2" />
+
+
+
+
+  
 * Device meter management
   
 <img width="755" height="408" alt="image" src="https://github.com/user-attachments/assets/af21f83e-da9e-49b6-ba70-4c7668631232" />
 
 
 
+
+
 * Device management
 
-<img width="752" height="406" alt="image" src="https://github.com/user-attachments/assets/4d5f5d77-f8e1-4bc5-a1ca-63207c5e7f2c" />
+<img width="756" height="406" alt="image" src="https://github.com/user-attachments/assets/c19b932b-9672-4bfa-b868-8244ad4fb966" />
+
+
+
 
 * Logs
   
 <img width="752" height="407" alt="image" src="https://github.com/user-attachments/assets/fd391a65-c55f-468e-8f41-4c8394085b10" />
+
+
+
 
 
 * Settings
