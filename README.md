@@ -1,6 +1,6 @@
 # ☀️ Solar Flow – Intelligent Solar Surplus Management System
 
-Intelligent solar energy management system based on Shelly EM (single and three-phase), with automatic load control via Shelly 1PM and integration with electric vehicle chargers.
+Intelligent solar energy management system based on Shelly EM / EM Pro (single & multi-channel configurations depending on setup), with automatic load control via Shelly 1PM and integration with electric vehicle chargers.
 
 The system communicates via the official Shelly REST API, but also supports simulated devices that completely mimic Shelly behavior, allowing for hardware-free development and testing.
 
