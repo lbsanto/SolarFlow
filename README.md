@@ -4,6 +4,14 @@ Intelligent solar energy management system based on Shelly EM (single and three-
 
 The system communicates via the official Shelly REST API, but also supports simulated devices that completely mimic Shelly behavior, allowing for hardware-free development and testing.
 
+👉 Solar Flow is compatible with all solar inverter brands, regardless of manufacturer, as long as production/consumption data can be measured (e.g., via Shelly EM or equivalent shelly meters).
+
+👉 The system does not require access to any inverter manufacturer cloud services, operating independently of vendor ecosystems.
+
+👉 It can operate without internet connection in local mode, ensuring full functionality inside a LAN environment.
+
+👉 Solar Flow is also fully compatible with battery storage systems, allowing intelligent management of stored solar energy, charge/discharge optimization, and self-consumption prioritization.
+
 ---
 
 # 🚀 Quick Start
