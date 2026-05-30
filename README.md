@@ -192,7 +192,7 @@ Full management script for MacOS:
 * start/stop the container
 * remove the system
 
-🪟 win_startbuild.sh
+🪟 win_startbuild.ps1
 
 Full management script for Windows:
 
@@ -238,7 +238,7 @@ linux_startbuild.sh remove
 The same commands apply on other operating systems, only changing the script name:
 
 macOS → mac_startbuild.sh
-Windows → win_startbuild.sh
+Windows → win_startbuild.ps1
 ```
 mac_startbuild.sh build
 mac_startbuild.sh start
