@@ -23,6 +23,17 @@ Open your browser and access:
 http://localhost
 ```
 
+# 🐳 Docker Network Configuration
+
+To allow Solar Flow running in Docker to communicate with Shelly devices on your local network, proper network configuration is required.
+
+1. Open Docker Desktop.
+2. Go to Settings → Resources → Network.
+3. Enable Enable host networking.
+4. Apply the changes and restart Docker Desktop if requested.
+
+Note: Without Host Networking enabled, the container may not be able to communicate with Shelly devices available on your local network.
+
 ---
 
 # 🧠 Main Concept
