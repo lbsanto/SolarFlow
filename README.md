@@ -56,6 +56,12 @@ The system was designed as a network of abstract energy devices, where:
 
 ---
 
+# 🧠 Real-world problem
+
+Homes with solar panels often export excess energy to the grid at low value or waste it. EV charging and battery systems are rarely optimized dynamically.
+
+---
+
 # ⭐ Key Feature
 
 Solar Flow is not only a solar surplus management platform.
@@ -438,13 +444,21 @@ The same commands apply on other operating systems, only changing the script nam
 
 Unlike traditional solar automation platforms, Solar Flow provides:
 
-* Real and simulated device interoperability
-* Hardware-independent development
-* Docker-based deployment
-* Unified device abstraction
-* Support for energy optimization and EV charging
+Real and simulated device interoperability
+Hardware-independent development
+Docker-based deployment
+Unified device abstraction
+Support for energy optimization and EV charging
 
 This enables faster development, safer testing, and easier deployment.
+
+👉 In addition, Solar Flow solves key real-world energy management problems:
+
+Prevents energy waste by dynamically using excess solar production
+Maximizes self-consumption of locally generated energy
+Reduces dependency on the electrical grid
+Avoids cloud lock-in by eliminating reliance on manufacturer cloud services
+Enables fully offline smart energy control within local networks
 
 ---
 
