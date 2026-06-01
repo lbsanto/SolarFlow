@@ -220,7 +220,7 @@ Screenshots:
 
 ---
 
-## Video demonstration
+## 🎬 Video demonstration
 
 [![Ver vídeo](https://img.youtube.com/vi/Ou6ErqyIWOY/0.jpg)](https://www.youtube.com/watch?v=Ou6ErqyIWOY)
 
