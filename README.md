@@ -218,7 +218,11 @@ Screenshots:
 * Settings
 <img width="755" height="405" alt="image" src="https://github.com/user-attachments/assets/1fa8c06d-4913-4237-8634-660e1d03f432" />
 
+---
 
+## Video demonstration
+
+[![Ver vídeo](https://img.youtube.com/vi/Ou6ErqyIWOY/0.jpg)](https://www.youtube.com/watch?v=Ou6ErqyIWOY)
 
 ---
 
