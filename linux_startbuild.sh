@@ -1,6 +1,3 @@
-
-
-
 #!/bin/bash
 
 CONTAINER_NAME="energy-app"
