@@ -31,6 +31,14 @@ Open your browser and access:
 http://localhost
 ```
 
+---
+
+## 🎬 Video demonstration
+
+<a href="https://www.youtube.com/watch?v=Ou6ErqyIWOY" target="_blank">
+  <img src="thumbnail.png" width="600">
+</a>
+
 # 🐳 Docker Network Configuration
 
 To allow Solar Flow running in Docker to communicate with Shelly devices on your local network, proper network configuration is required.
@@ -217,12 +225,6 @@ Screenshots:
 
 * Settings
 <img width="755" height="405" alt="image" src="https://github.com/user-attachments/assets/1fa8c06d-4913-4237-8634-660e1d03f432" />
-
----
-
-## 🎬 Video demonstration
-
-[![Ver vídeo](https://img.youtube.com/vi/Ou6ErqyIWOY/0.jpg)](https://www.youtube.com/watch?v=Ou6ErqyIWOY)
 
 ---
 
