@@ -4,7 +4,7 @@ CONTAINER_NAME="energy-app"
 IMAGE_NAME="energy-app"
 
 function show_help() {
-  echo "Usage: $0 {build|remove|run|start|stop|help}"
+  echo "Usage: $0 {build|start|stop|remove|help}"
   echo ""
   echo "Commands:"
   echo "  build   - Stop container (if exists) and build image"
